@@ -12,6 +12,7 @@ export default class CreateTransactions1588446409246
             type: 'uuid',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'title',
@@ -30,7 +31,7 @@ export default class CreateTransactions1588446409246
           },
           {
             name: 'category_id',
-            type: 'integer',
+            type: 'uuid',
             isNullable: false,
           },
           {
